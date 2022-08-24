@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 import HomePage from './Pages/HomePage'
 >>>>>>> 1d0e526 (add header background and scss variables)
 

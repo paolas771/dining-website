@@ -1,0 +1,59 @@
+$font-stack: 'League Spartan', sans-serif;
+/* colors */
+$mirage: #17192b;
+$cod-gray: #111111;
+$ebony-clay: #242b37;
+$shuttle-gray: #5c6779;
+$white: #ffffff;
+/*font sizes*/
+$h4-font-size: 20px;
+$h5-font-size: 17px;
+$h6-font-size: 14px;
+$button-font-size: 17px;
+$h1-font-size: (
+    mobile: 32px,
+    tablet-desktop: 40px
+);
+$h2-font-size: (
+    mobile: 32px,
+    tablet: 48px,
+    desktop: 80px
+);
+$h3-font-size: (
+    mobile: 32px,
+    tablet-desktop: 48px
+);
+
+$p-font-size: (
+    mobile: 16px,
+    tablet-desktop: 20px
+);
+
+
+body{
+    font-family: $font-stack;
+    margin: 0;
+}
+.headerContainer{
+    background: url(./images/homepage/hero-bg-mobile@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 748px;
+}
+.homeHeader{
+    padding-top: 232px;
+    color: $white;
+    width: 327px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    h2{
+        font-weight: 300;
+    }
+    p{
+        font-weight: 400;
+    }
+}
+
+

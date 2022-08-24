@@ -1,0 +1,30 @@
+/* colors */
+/*font sizes*/
+body {
+  font-family: "League Spartan", sans-serif;
+  margin: 0;
+}
+
+.headerContainer {
+  background: url(./images/homepage/hero-bg-mobile@2x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 748px;
+}
+
+.homeHeader {
+  padding-top: 232px;
+  color: #ffffff;
+  width: 327px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.homeHeader h2 {
+  font-weight: 300;
+}
+.homeHeader p {
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=styles.css.map */

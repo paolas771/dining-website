@@ -5,29 +5,29 @@ $cod-gray: #111111;
 $ebony-clay: #242b37;
 $shuttle-gray: #5c6779;
 $white: #ffffff;
+$tablet-breakpoint: 573px;
+$desktop-breakpoint: 1015px;
 /*font sizes*/
-$h4-font-size: 20px;
-$h5-font-size: 17px;
-$h6-font-size: 14px;
-$button-font-size: 17px;
-$h1-font-size: (
-    mobile: 32px,
-    tablet-desktop: 40px
+$font-size: (
+    h1-mobile: 40px,
+    h1-tablet-desktop: 48px,
+    h2-mobile: 32px,
+    h2-tablet: 48px,
+    h2-desktop: 80px,
+    h3-mobile: 32px,
+    h3-tablet-desktop: 48px,
+    h4-all: 20px,
+    h5-all: 17px,
+    h6-all: 14px,
+    p-mobile: 16px,
+    p-tablet-desktop: 20px,
+    button-all: 17px
 );
-$h2-font-size: (
-    mobile: 32px,
-    tablet: 48px,
-    desktop: 80px
-);
-$h3-font-size: (
-    mobile: 32px,
-    tablet-desktop: 48px
-);
+@function font-size($size){
+    @return map-get($font-size, $size);
+}
 
-$p-font-size: (
-    mobile: 16px,
-    tablet-desktop: 20px
-);
+
 
 
 body{
@@ -39,6 +39,18 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     height: 748px;
+
+    @media(min-width: $tablet-breakpoint){
+        background: url(./images/homepage/hero-bg-tablet@2x.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @media(min-width: $desktop-breakpoint){
+        background: url(./images/homepage/hero-bg-desktop@2x.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
 }
 .homeHeader{
     padding-top: 232px;
@@ -47,13 +59,53 @@ body{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    
+
+    h1{
+        font-size: font-size(h1-mobile);
+        letter-spacing: 1.5px;
+    }
     h2{
         font-weight: 300;
+        font-size: font-size(h2-mobile);
+        line-height: 40px;
+        letter-spacing: -.4px;
+        width: 250px;
+        margin: auto;
     }
     p{
         font-weight: 400;
+        line-height: 26px;
+        font-size: font-size(p-mobile);
     }
+    @media(min-width: $tablet-breakpoint){
+        padding-top: 374px;
+        width: 573px;
+        h1{
+            font-size: font-size(h1-tablet-desktop);
+        }
+        h2{
+            font-size: font-size(h2-tablet);
+            width: 300px;
+            line-height: 64px;
+        }
+        p{
+            font-size: font-size(p-tablet-desktop);
+        }
+    }
+    @media(min-width: $desktop-breakpoint){
+        text-align: left;
+        width: 445px;
+        margin: 0;
+        margin-left: 165px;
+        h1{
+            margin-top: -300px;
+        }
+        h2{
+            font-size: font-size(h2-desktop);
+            line-height: 80px;
+            width: 508px;
+            margin: 0;
+            margin-top: 153px;
+        }
+    }   
 }
-
-

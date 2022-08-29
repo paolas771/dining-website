@@ -11,6 +11,20 @@ body {
   background-repeat: no-repeat;
   height: 748px;
 }
+@media (min-width: 573px) {
+  .headerContainer {
+    background: url(./images/homepage/hero-bg-tablet@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 1015px) {
+  .headerContainer {
+    background: url(./images/homepage/hero-bg-desktop@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 .homeHeader {
   padding-top: 232px;
@@ -20,11 +34,57 @@ body {
   margin-right: auto;
   text-align: center;
 }
+.homeHeader h1 {
+  font-size: 40px;
+  letter-spacing: 1.5px;
+}
 .homeHeader h2 {
   font-weight: 300;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.4px;
+  width: 250px;
+  margin: auto;
 }
 .homeHeader p {
   font-weight: 400;
+  line-height: 26px;
+  font-size: 16px;
+}
+@media (min-width: 573px) {
+  .homeHeader {
+    padding-top: 374px;
+    width: 573px;
+  }
+  .homeHeader h1 {
+    font-size: 48px;
+  }
+  .homeHeader h2 {
+    font-size: 48px;
+    width: 300px;
+    line-height: 64px;
+  }
+  .homeHeader p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1015px) {
+  .homeHeader {
+    text-align: left;
+    width: 445px;
+    margin: 0;
+    margin-left: 165px;
+  }
+  .homeHeader h1 {
+    margin-top: -300px;
+  }
+  .homeHeader h2 {
+    font-size: 80px;
+    line-height: 80px;
+    width: 508px;
+    margin: 0;
+    margin-top: 153px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

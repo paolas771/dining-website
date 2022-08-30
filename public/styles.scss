@@ -48,11 +48,13 @@ body{
         background: url(./images/homepage/hero-bg-tablet@2x.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        height: 992px
     }
     @media(min-width: $desktop-breakpoint){
         background: url(./images/homepage/hero-bg-desktop@2x.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        height: 820px;
     }
 
 }

@@ -26,7 +26,11 @@ $font-size: (
 @function font-size($size){
     @return map-get($font-size, $size);
 }
-
+@mixin button-style($color: $cod-gray) {
+    background-color: $color;
+    color: $white;
+    
+}
 
 
 
@@ -77,6 +81,13 @@ body{
         line-height: 26px;
         font-size: font-size(p-mobile);
     }
+    .headerButton{
+        @include button-style();
+        width: 245px;
+        height: 64px;
+        margin-top: 53px;
+        border: 1px solid $white;
+    }
     @media(min-width: $tablet-breakpoint){
         padding-top: 374px;
         width: 573px;
@@ -90,6 +101,7 @@ body{
         }
         p{
             font-size: font-size(p-tablet-desktop);
+            line-height: 30px;
         }
     }
     @media(min-width: $desktop-breakpoint){
@@ -107,5 +119,15 @@ body{
             margin: 0;
             margin-top: 153px;
         }
+        .headerButton{
+            margin-top: 40px;
+        }
     }   
+}
+button{
+    font-size: font-size(button-all);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    
 }

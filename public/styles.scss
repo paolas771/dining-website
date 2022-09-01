@@ -5,7 +5,7 @@ $cod-gray: #111111;
 $ebony-clay: #242b37;
 $shuttle-gray: #5c6779;
 $white: #ffffff;
-$tablet-breakpoint: 573px;
+$tablet-breakpoint: 575px;
 $desktop-breakpoint: 1015px;
 /*font sizes*/
 $font-size: (
@@ -48,6 +48,7 @@ body{
         background: url(./images/homepage/hero-bg-tablet@2x.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
         height: 992px
     }
     @media(min-width: $desktop-breakpoint){
@@ -87,7 +88,7 @@ body{
         @include button-style();
         width: 245px;
         height: 64px;
-        margin-top: 53px;
+        margin-top: 40px;
         border: 1px solid $white;
     }
     @media(min-width: $tablet-breakpoint){
@@ -127,9 +128,41 @@ body{
     }   
 }
 button{
+    font-family: $font-stack;
     font-size: font-size(button-all);
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2.5px;
     
 }
+.infoContainer{
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: -70px;
+    
+    .infoPic{
+        width: 327px;
+        box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+    }
+    .divider{
+        padding-top: 48px;
+    }
+    h3{
+        font-size:font-size(h3-mobile);
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 40px;
+        letter-spacing: -.4px;
+        margin-bottom: 13px;
+    }
+    p{
+        font-size: font-size(p-mobile);
+        line-height: 26px;
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+}
+

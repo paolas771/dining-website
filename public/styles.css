@@ -11,11 +11,12 @@ body {
   background-repeat: no-repeat;
   height: 748px;
 }
-@media (min-width: 573px) {
+@media (min-width: 575px) {
   .headerContainer {
     background: url(./images/homepage/hero-bg-tablet@2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 992px;
   }
 }
@@ -58,10 +59,10 @@ body {
   color: #ffffff;
   width: 245px;
   height: 64px;
-  margin-top: 53px;
+  margin-top: 40px;
   border: 1px solid #ffffff;
 }
-@media (min-width: 573px) {
+@media (min-width: 575px) {
   .homeHeader {
     padding-top: 374px;
     width: 573px;
@@ -102,10 +103,41 @@ body {
 }
 
 button {
+  font-family: "League Spartan", sans-serif;
   font-size: 17px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2.5px;
+}
+
+.infoContainer {
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: -70px;
+}
+.infoContainer .infoPic {
+  width: 327px;
+  box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+}
+.infoContainer .divider {
+  padding-top: 48px;
+}
+.infoContainer h3 {
+  font-size: 32px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 40px;
+  letter-spacing: -0.4px;
+  margin-bottom: 13px;
+}
+.infoContainer p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */

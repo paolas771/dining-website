@@ -168,5 +168,93 @@ button{
         margin-right: auto;
 
     }
+    @media(min-width: $tablet-breakpoint) {
+        width: 573px;
+        .infoPic{
+            width: 573px;
+            height: 360px;
+            position: relative;
+        }
+        h3{
+            font-size: font-size(h3-tablet-desktop);
+            width: 350px;
+            line-height: 48px;
+        }
+        p{
+            font-size: font-size(p-tablet-desktop);
+            width: 457px;
+        }
+    }
+    @media(min-width: $desktop-breakpoint){
+        width: 1110px;
+        .info1, .info2{
+            display: grid;
+            grid-template-columns: auto auto;
+            text-align: left;
+            row-gap: 27px;
+            margin-bottom: 121px;
+        }
+        .info2 .infoPic{
+            grid-column: 2 / 3;
+            margin-left: 125px;
+        }
+        .divider{
+            padding-top: 250px;
+            padding-bottom: 28px;
+        }
+        .infoPic{
+            width: 540px;
+            height: 720px;
+            grid-row: 1 / 5;
+        }
+        h3{
+            margin: 0;
+        }
+        .info1 h3, .info1 p, .info1 .divider{
+            margin-left: 125px;
+        }
+        p{
+            width: 445px;
+            line-height: 30px;
+        }
+        
+    }
+}
+@media(min-width: $tablet-breakpoint) {
+    .topRight{
+        position: absolute;
+        top: 1125px;
+        left: -515px;
+        z-index: -1;
+    }
+    .lines{
+        position: absolute;
+        top: 1917px;
+        left: 568px;
+        z-index: 1;
+    }
+    .topLeftSection{
+        width: 384px;
+        overflow: hidden;
+        position: absolute;
+        top: 2162px;
+        left: 384px;
+    }
+    
+}
+@media(min-width: $desktop-breakpoint){
+    .topRight{
+        top:1070px;
+        left: 0;
+    }
+    .lines{
+        top: 1873px;
+        left: 1229px;
+    }
+    .topLeftSection{
+        width: 895px;
+        top: 1911px;
+        left: 554px;
+    }
 }
 

@@ -142,5 +142,96 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 575px) {
+  .infoContainer {
+    width: 573px;
+  }
+  .infoContainer .infoPic {
+    width: 573px;
+    height: 360px;
+    position: relative;
+  }
+  .infoContainer h3 {
+    font-size: 48px;
+    width: 350px;
+    line-height: 48px;
+  }
+  .infoContainer p {
+    font-size: 20px;
+    width: 457px;
+  }
+}
+@media (min-width: 1015px) {
+  .infoContainer {
+    width: 1110px;
+  }
+  .infoContainer .info1, .infoContainer .info2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: left;
+    row-gap: 27px;
+    margin-bottom: 121px;
+  }
+  .infoContainer .info2 .infoPic {
+    grid-column: 2/3;
+    margin-left: 125px;
+  }
+  .infoContainer .divider {
+    padding-top: 250px;
+    padding-bottom: 28px;
+  }
+  .infoContainer .infoPic {
+    width: 540px;
+    height: 720px;
+    grid-row: 1/5;
+  }
+  .infoContainer h3 {
+    margin: 0;
+  }
+  .infoContainer .info1 h3, .infoContainer .info1 p, .infoContainer .info1 .divider {
+    margin-left: 125px;
+  }
+  .infoContainer p {
+    width: 445px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 575px) {
+  .topRight {
+    position: absolute;
+    top: 1125px;
+    left: -515px;
+    z-index: -1;
+  }
+  .lines {
+    position: absolute;
+    top: 1917px;
+    left: 568px;
+    z-index: 1;
+  }
+  .topLeftSection {
+    width: 384px;
+    overflow: hidden;
+    position: absolute;
+    top: 2162px;
+    left: 384px;
+  }
+}
+@media (min-width: 1015px) {
+  .topRight {
+    top: 1070px;
+    left: 0;
+  }
+  .lines {
+    top: 1873px;
+    left: 1229px;
+  }
+  .topLeftSection {
+    width: 895px;
+    top: 1911px;
+    left: 554px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

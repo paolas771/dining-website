@@ -12,7 +12,7 @@ export default function HomePage(){
     }, [])
     function imgSize(mobile, tablet, desktop){
         var img = windowWidth < 575 ? mobile:
-                windowWidth >= 575 && windowWidth < 1015 ? tablet : 
+                windowWidth >= 575 && windowWidth < 1067 ? tablet : 
                 desktop
         return img
     }

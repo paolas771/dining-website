@@ -6,7 +6,7 @@ $ebony-clay: #242b37;
 $shuttle-gray: #5c6779;
 $white: #ffffff;
 $tablet-breakpoint: 575px;
-$desktop-breakpoint: 1015px;
+$desktop-breakpoint: 1067px;
 /*font sizes*/
 $font-size: (
     h1-mobile: 40px,
@@ -186,20 +186,22 @@ button{
         }
     }
     @media(min-width: $desktop-breakpoint){
-        width: 1110px;
+        width: 80%;
         .info1, .info2{
             display: grid;
             grid-template-columns: auto auto;
             text-align: left;
             row-gap: 27px;
             margin-bottom: 121px;
+            width: 100%;
         }
         .info2 .infoPic{
             grid-column: 2 / 3;
             margin-left: 125px;
+            
         }
         .divider{
-            padding-top: 250px;
+            padding-top: 40%;
             padding-bottom: 28px;
         }
         .infoPic{
@@ -209,12 +211,17 @@ button{
         }
         h3{
             margin: 0;
+            width: 60%;
+        }
+        .info2 h3{
+            width: 100%;
         }
         .info1 h3, .info1 p, .info1 .divider{
             margin-left: 125px;
         }
         p{
-            width: 445px;
+            width: 80%;
+            margin-left: 0;
             line-height: 30px;
         }
         
@@ -230,7 +237,7 @@ button{
     .lines{
         position: absolute;
         top: 1917px;
-        left: 568px;
+        right: 5%;
         z-index: 1;
     }
     .topLeftSection{
@@ -238,7 +245,8 @@ button{
         overflow: hidden;
         position: absolute;
         top: 2162px;
-        left: 384px;
+        margin-left: 384px;
+        right: 0px;
     }
     
 }
@@ -249,12 +257,12 @@ button{
     }
     .lines{
         top: 1873px;
-        left: 1229px;
+        right: 3%;
     }
     .topLeftSection{
-        width: 895px;
+        width: 885px;
         top: 1911px;
-        left: 554px;
+        margin-left: 38.5%;
     }
 }
 

@@ -203,6 +203,50 @@ button {
   }
 }
 
+.highlights {
+  background: #111111;
+  color: #ffffff;
+  text-align: center;
+}
+.highlights .hlDescription {
+  width: 327px;
+  margin: auto;
+}
+.highlights .hlDivider {
+  padding-top: 72px;
+}
+.highlights h3 {
+  font-size: 32px;
+}
+.highlights p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.highlights .menuPic {
+  width: 327px;
+  height: 245px;
+}
+.highlights h4 {
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 36px;
+}
+.highlights .item {
+  width: 327px;
+  margin: auto;
+  display: grid;
+}
+.highlights .menuDescription {
+  margin-bottom: 28px;
+}
+.highlights hr {
+  margin-bottom: 24px;
+  width: 327px;
+  background: #ffffff;
+  opacity: 0.15;
+}
+
 @media (min-width: 575px) {
   .topRight {
     position: absolute;

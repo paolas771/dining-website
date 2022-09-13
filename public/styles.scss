@@ -141,7 +141,6 @@ button{
     margin-right: auto;
     text-align: center;
     margin-top: -70px;
-    
     .infoPic{
         width: 327px;
         box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
@@ -227,6 +226,53 @@ button{
         
     }
 }
+.highlights{
+    background: $cod-gray;
+    color: $white;
+    text-align: center;
+    .hlDescription{
+        width: 327px;
+        margin: auto;
+    }
+    .hlDivider{
+        padding-top: 72px;
+    }
+    h3{
+        font-size: font-size(h3-mobile);
+        
+    }
+    p{
+        font-size: font-size(p-mobile);
+        font-weight: 400;
+        line-height: 26px;
+    }
+    .menuPic{
+        width: 327px;
+        height: 245px;
+    }
+    h4{
+        font-size: font-size(h4-all);
+        margin-bottom: 0;
+        margin-top: 36px;
+    }
+    .item{
+        width: 327px;
+        margin: auto;
+        display: grid;
+    }
+    .menuDescription{
+        margin-bottom: 28px;
+    }
+    hr{
+        margin-bottom: 24px;
+        width: 327px;
+        background: $white;
+        opacity: .15;
+    }
+    
+
+}
+
 @media(min-width: $tablet-breakpoint) {
     .topRight{
         position: absolute;

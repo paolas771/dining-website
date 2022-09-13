@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../Components/Header'
 import Info from '../Components/Info'
+import Menu from '../Components/Menu'
 
 export default function HomePage(){
     const [windowWidth, setWindoWidth] = React.useState(window.innerWidth)
@@ -22,8 +23,11 @@ export default function HomePage(){
                                 "../images/homepage/enjoyable-place-desktop@2x.jpg" )
     const localImg = imgSize("../images/homepage/locally-sourced-mobile@2x.jpg", 
                                 "../images/homepage/locally-sourced-tablet@2x.jpg", 
-                                "../images/homepage/locally-sourced-desktop@2x.jpg" )       
-    console.log(enjoyableImg)
+                                "../images/homepage/locally-sourced-desktop@2x.jpg" )  
+         
+    const salmon = imgSize("../images/homepage/salmon-mobile@2x.jpg",
+                            "../images/homepage/salmon-desktop-tablet@2x.jpg",
+                            "../images/homepage/salmon-desktop-tablet@2x.jpg" )
     
     
     return(
@@ -41,9 +45,7 @@ export default function HomePage(){
         <section className="topLeftSection">
           {windowWidth >= 575 && <img className="topLeft" src="../images/patterns/pattern-curve-top-left.svg"/>}  
         </section>
-        
         <div className="infoContainer">
-            
             <Info 
                 className="info1"
                 img={enjoyableImg}
@@ -60,6 +62,35 @@ export default function HomePage(){
                         So you can be sure that you’re eating the freshest, most sustainable food."
             />
             
+        </div>
+        <div className="highlights">
+            <section className="hlDescription">
+                <img className="hlDivider" src="../images/patterns/pattern-divide.svg" alt=''/>
+                <h3>A few highlights from our menu</h3>
+                <p className="highlightDes">We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. 
+                    Our menu is revamped every season.</p>
+            </section>
+            <Menu 
+                img="../images/homepage/salmon-mobile@2x.jpg"
+                item="Seared Salmon Fillet"
+                description="Our locally sourced salmon served 
+                with a refreshing buckwheat summer salad."
+            />
+            <hr></hr>
+            <Menu 
+                img="../images/homepage/beef-mobile@2x.jpg"
+                item="Rosemary Filet Mignon"
+                description="Our prime beef served to your taste 
+                with a delicious choice of seasonal 
+                sides."
+            />
+            <hr></hr>
+            <Menu 
+                img="../images/homepage/chocolate-mobile@2x.jpg"
+                item="Summer Fruit Chocolate Mousse"
+                description="Creamy mousse combined with 
+                summer fruits and dark chocolate shavings."
+            />
         </div>
         </>
     )

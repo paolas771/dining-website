@@ -75,6 +75,7 @@ export default function HomePage(){
                 item="Seared Salmon Fillet"
                 description="Our locally sourced salmon served 
                 with a refreshing buckwheat summer salad."
+                width={windowWidth}
             />
             <hr></hr>
             <Menu 
@@ -83,6 +84,7 @@ export default function HomePage(){
                 description="Our prime beef served to your taste 
                 with a delicious choice of seasonal 
                 sides."
+                width={windowWidth}
             />
             <hr></hr>
             <Menu 
@@ -90,6 +92,7 @@ export default function HomePage(){
                 item="Summer Fruit Chocolate Mousse"
                 description="Creamy mousse combined with 
                 summer fruits and dark chocolate shavings."
+                width={windowWidth}
             />
         </div>
         </>

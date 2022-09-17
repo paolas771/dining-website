@@ -191,13 +191,18 @@ button{
             grid-template-columns: auto auto;
             text-align: left;
             row-gap: 27px;
-            margin-bottom: 121px;
             width: 100%;
+        }
+        .info1{
+            margin-bottom: 121px;
+        }
+        .info2{
+            margin-bottom: 0px;
         }
         .info2 .infoPic{
             grid-column: 2 / 3;
             margin-left: 125px;
-            
+            box-shadow: none;
         }
         .divider{
             padding-top: 40%;
@@ -296,14 +301,15 @@ button{
             grid-row: 1/3;
             width: 128px;
             height: 96px;
+            position: relative;
+            z-index: 1;
         }
         .menuLine{
-            width: 32px;
-            height: 1px;
-            border: 1px solid #9E7F66;
             grid-row: 1/3;
             margin: 0;
-            margin-top: 16px;
+            margin-top: 15px;
+            margin-left: -40px;
+            position: relative;
         }
         .menuItem{
             margin-top: 10px;
@@ -314,6 +320,22 @@ button{
         }
         hr{
             width: 573px;
+        }
+        @media(min-width: $desktop-breakpoint){
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-top: -80px;
+            .hlDivider{
+                padding-top: 60px;
+            }
+            .hlDescription{
+                grid-row: 1/6;
+                text-align: left;
+                width: 460px;
+            }
+            .item:first-of-type{
+                margin-top: 270px;
+            }
         }
     }
 

@@ -84,13 +84,6 @@ body{
         line-height: 26px;
         font-size: font-size(p-mobile);
     }
-    .headerButton{
-        @include button-style();
-        width: 245px;
-        height: 64px;
-        margin-top: 40px;
-        border: 1px solid $white;
-    }
     @media(min-width: $tablet-breakpoint){
         padding-top: 374px;
         width: 573px;
@@ -126,6 +119,13 @@ body{
             margin-top: 40px;
         }
     }   
+}
+.headerButton{
+    @include button-style();
+    width: 245px;
+    height: 64px;
+    margin-top: 40px;
+    border: 1px solid $white;
 }
 button{
     font-family: $font-stack;

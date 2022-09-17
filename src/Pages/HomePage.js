@@ -1,7 +1,9 @@
 import React from 'react'
+import {BrowserRouter, Link, Route, Routes} from 'react-router-dom'
 import Header from '../Components/Header'
 import Info from '../Components/Info'
 import Menu from '../Components/Menu'
+import Gathering from '../Components/Gathering'
 
 export default function HomePage(){
     const [windowWidth, setWindoWidth] = React.useState(window.innerWidth)
@@ -94,6 +96,42 @@ export default function HomePage(){
                 summer fruits and dark chocolate shavings."
                 width={windowWidth}
             />
+        </div>
+        <div className="gatheringSection">
+        <BrowserRouter>
+            <Link to='/family'>Family Gathering</Link>
+            <Link to='/special'>Special Events</Link>
+            <Link to='/social'>Social Events</Link>
+                <Routes>
+                    <Route path="/family" index
+                        element={<Gathering 
+                            img="../images/homepage/family-gathering-mobile@2x.jpg"
+                            subTitle="Family Gathering"
+                            description="We love catering for entire families. So please bring everyone along for a special meal with your loved ones. 
+                            We’ll provide a memorable experience for all."
+                        />}
+                    >
+                    </Route>
+                    <Route path="/special"
+                        element={<Gathering 
+                            img="../images/homepage/special-events-mobile@2x.jpg"
+                            subTitle="Special Events"
+                            description="Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. 
+                            We’ll be sure to mark your special date with an unforgettable meal."
+                        />}
+                    >
+                    </Route>
+                    <Route path="/social"
+                        element={<Gathering 
+                            img="../images/homepage/social-events-mobile@2x.jpg"
+                            subTitle="Social Events"
+                            description="Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. 
+                            We’ll work with you to make your event a hit with everyone."
+                        />}
+                    >
+                    </Route>
+                </Routes>
+        </BrowserRouter>
         </div>
         </>
     )

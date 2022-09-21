@@ -380,4 +380,117 @@ button{
         margin-left: 38.5%;
     }
 }
+.gatheringSection{
+    width: 327px;
+    margin:auto;
+    text-align: center;
+    position: relative;
+    margin-top: 80px;
+    .gatheringImg{
+        width: 327px;
+        height: 400px;
+        box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+    }
+    .linkSection{
+        position: absolute;
+        top: 440px;
+        display: flex;
+        flex-direction: column;
+        width: 327px;
+        margin: auto;
+    }
+    .links{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: font-size(button-all);
+        line-height: 28px;
+        margin-bottom: 16px;
+        color: rgba(76, 76, 76, .5);
+        font-weight: 600;
+    }
+    .links:active{
+        color: rgba(76, 76, 76, 1);
+    }
+    .links:hover{
+        color: rgba(76, 76, 76, 1);
+    }
+    
+    .links[tabIndex]:focus{
+        color: #4c4c4c;
+        text-decoration: underline #9e7f66;
+    }
+    /*.links[tabindex]:focus:after{
+        content: "";
+        height: 1px;
+        width: 48px;
+        background: #9E7F66;
+        position: absolute;
+        left: 139px;
+        bottom: 0;
+    }*/
+    .gatheringInfo{
+        position: absolute;
+        top: 550px;
+    }
+    .gatheringTitle{
+        font-size:font-size(h3-mobile);
+        color: $ebony-clay;
+    }
+    .gatheringDes{
+        font-size: font-size(p-all);
+        color: $ebony-clay;
+        line-height: 26px;
+        font-weight: 400;
+        width: 327px;
+    }
+}
+@media(min-width: $tablet-breakpoint) {
+    .gatheringSection{
+        margin-top: 0;
+        width: 689px;
+
+        .gatheringImg{
+            width: 573px;
+            height: 360px;
+            margin-top: 120px
+        }
+        .linkSection{
+            width: 689px;
+            top: 520px;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .gatheringInfo{
+            width: 689px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .gatheringTitle{
+            font-size:font-size(h3-tablet-desktop);
+        }
+        .gatheringDes{
+            width: 440px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    
+    .topRightGathering{
+        position: absolute;
+        top: 0;
+        left: -550px;
+        z-index: -1;
+    }
+    .linesGathering{
+        position: absolute;
+        top: 80px;
+        left: -10px;
+        z-index: 1;
+    }
+    
+    
+}
+
 
